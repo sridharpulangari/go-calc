@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: go-calc
-        image: go-calc:latest
+        image: sridharpulangari/go-calc:0.0.1
         ports:
         - containerPort: 8080      
       imagePullSecrets:
