@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-calc-deployment
+  labels:
+    app: go-calc
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: go-calc
+  template:
+    metadata:
+      labels:
+        app: go-calc
+    spec:
+      containers:
+      - name: go-calc
+        image: go-calc:latest
+        ports:
+        - containerPort: 8080      
+      imagePullSecrets:
+      - name: mydocker
