@@ -19,5 +19,4 @@ spec:
         image: sridharpulangari/go-calc:0.0.1
         ports:
         - containerPort: 8080      
-      imagePullSecrets:
-      - name: mydocker
+
