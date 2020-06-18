@@ -42,16 +42,20 @@ $ ok
 # Go-calc application deploymnet steps 
 
 ## build docker image
+...
 docker build -t {tag-name} .
-
+...
 ## docker image push
+...
 docker login
 docker tag {tag-name} userame/{tag-name}
 dokcer push userame/{tag-name}
-
+...
 ## k8s deployment
+...
 kubectl create -f gocalc-deployment.yaml
 kubectl create -f service.yaml.yaml
+...
 
 ## Test deploymnet
 open beowser and hit localhost:8080/
