@@ -57,4 +57,4 @@ kubectl create -f gocalc-deployment.yaml
 kubectl create -f service.yaml.yaml
 ```
 ## Test deploymnet
-open beowser and hit localhost:8080/
+open beowser and hit localhost:31100/status
